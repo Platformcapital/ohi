@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>AI.Tech - Artificial Intelligence HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="./img/6.svg" style="width: 300px; padding-top: 40px;">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="faq.html" class="dropdown-item">FAQs</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Rooted Leadership</div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">From Tradition to <span style="color: #f4c430;"> Transformation</span></h1>
+                    <p class="text-white mb-4 animated slideInRight">His Royal Majesty leads a movement of dignity, healing, and nation-building, starting from Owu</p>
+                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img/hero-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/_OWU5860.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
+                    <h1 class="mb-4">We are building a Nigeria where no one is left behind, <span style="color: #6a0dad;">starting from Owu</span></h1>
+                    <p class="mb-4">The Olowu Hope Initiative is a community development movement rooted in royal leadership and civic compassion.</p>
+                    <p class="mb-4">Founded by His Royal Majesty, Prof. Oba Salaudeen Matemilola, it is built on a simple belief: when people are fed, empowered, healed, and educated, nations thrive.</p>
+                   
+                    <div class="d-flex align-items-center mt-4">
+                        <a class="btn btn-primary rounded-pill px-4 me-3" href="">Learn More</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+<!-- Service Start -->
+<div class="container-fluid bg-light mt-5 py-5">
+    <div class="container py-5 text-center">
+        <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
+        <h1 class="mb-4">Our Core Initiatives</h1>
+        <p class="mb-4 w-75 mx-auto">
+            The Olowu Hope Initiative is focused on building a new foundation for our people — one that uplifts, sustains, and restores dignity through empowerment.
+        </p>
+        <a class="btn btn-primary rounded-pill px-4 mb-5" href="">Read More</a>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            <!-- Service 1 -->
+            <div class="service-item bus1 text-center rounded">
+                <div class="service-icon btn-square">
+                    <img class="ics" src="./img//meal icon.svg">
+                </div>
+                <h5 class="mb-3">Meal-a-day Program</h5>
+                <p>Feeding 1,000+ children daily to boost school attendance, focus, and nutrition, while supporting local farmers and caterers.</p>
+                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-item bus2 text-center rounded">
+                <div class="service-icon btn-square">
+                    <img class="ics" src="./img//women icon.svg">
+                </div>
+                <h5 class="mb-3">Women Empowerment through Microcredit</h5>
+                <p>₦7M+ in interest-free loans helping women grow businesses in trade, food, sewing, and farming.
+
+</p>
+                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-item bus3 text-center rounded">
+                <div class="service-icon btn-square">
+                    <img class="ics" src="./img//skillicon.svg">
+                </div>
+                <h5 class="mb-3">Skills & Enterprise Training</h5>
+                <p>Vocational and financial training in Adire, fashion, farming, CNC, and more, creating job makers, not job seekers.</p>
+                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-item bus4 text-center rounded">
+                <div class="service-icon btn-square">
+                    <img class="ics" src="./img//healthicon.svg">
+                </div>
+                <h5 class="mb-3">Healthcare & Insurance</h5>
+                <p>700+ enrolled in free community health cover; clinics renovated; regular outreach on dental, vision, and wellness.</p>
+                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+        </div>
+
+        <!-- Fifth container centered -->
+        <div class="d-flex justify-content-center mt-5 gap-4">
+            <div class="service-item bus5 text-center rounded">
+                <div class="service-icon btn-square">
+                    <img class="ics" src="./img//conflicticon.svg">
+                </div>
+                <h5 class="mb-3">Conflict Resolution (ADR Centre)</h5>
+                <p>26 disputes resolved using traditional mediation blended with modern legal support, restoring peace and unity.</p>
+                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+            <div class="service-item bus6 text-center rounded">
+                <div class="service-icon btn-square">
+                    <img class="ics" src="./img//educationicon.svg">
+                </div>
+                <h5 class="mb-3">Inclusive Education</h5>
+                <p>Transforming schools into safe, dignified spaces — including the model school for learners with special needs.</p>
+                <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+            </div>
+       
+    </div>
+</div>
+<!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why We Started</div>
+                    <h1 class="text-white mb-4">Because Everyone Deserves a Chance to Rise</h1>
+                    <p class="text-light mb-4">In too many communities, dreams are held back by poverty, poor health, conflict, and a lack of access. The Olowu Hope Initiative was born to restore dignity — by empowering women, feeding children, providing healthcare, and building peace. Led by His Royal Majesty, Prof. Oba Salaudeen Matemilola, we’re starting from home, but our mission is national.</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bus9 text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Empowerment where it matters most</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bus9 text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Solutions rooted in tradition and action</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bus9 text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>A people-first movement led by compassion</span>
+                    </div>
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: #f4c430;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
+                                    <p class="text-white mb-0">Project Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid cam" src="img/feature.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Case Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Projects</div>
+                <h1 class="mb-4">Our Current Projects</h1>
+                <p>From education to health, every project we take on is a promise kept — a sign that leadership is action, not position.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-1.png" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Daniel Akintonde Model School</small>
+                            <h5 class="lh-base text-white mb-3">A complete transformation of a school for children with special learning needs
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-2.png" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>Igosun Health Centre Renovation</small>
+                            <h5 class="lh-base text-white mb-3">This vital rural health centre has been fully renovated and equipped
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="case-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="img/project-3.png" alt="">
+                        <a class="case-overlay text-decoration-none" href="">
+                            <small>₦7M+ Women Loan Network</small>
+                            <h5 class="lh-base text-white mb-3">Across Abeokuta, women traders are rising — thanks to over ₦7 million in interest-free loans.
+                            </h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case End -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Popular FAQs</div>
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Is the Olowu Hope Initiative a government program?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    No. It is a community development initiative led by His Royal Majesty, the Olowu of Owu Kingdom, complementing existing public efforts.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can I support if I don’t live in Abeokuta or Nigeria?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Yes! You can donate, volunteer remotely, or partner with us from anywhere in the world.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How is my donation used?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    100% of public donations go directly to projects like school feeding, healthcare, microloans, and educational transformation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Can I visit a project site?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Absolutely. Use the contact form to schedule a visit, and we’ll be happy to welcome you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Who benefits from the programs?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Our programs support children, women, youth, and vulnerable families — with a special focus on underserved communities.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Can organizations or businesses partner with you?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes! We welcome partnerships with NGOs, foundations, CSR teams, and companies passionate about community transformation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Are your impact stories real?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                   Every story we share is real and verified. They reflect the true experiences of people touched by the initiative.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    How can I become a volunteer?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                   Just click the "Volunteer" button on this page or reach out through our contact form — we’ll connect with you right away.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
+    <!-- Team Start 
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
+                    <h1 class="mb-4">Meet Our Experienced Team Members</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
+                                        <h5 class="mb-0">Boris Johnson</h5>
+                                        <small>Founder & CEO</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
+                                        <h5 class="mb-0">Adam Crew</h5>
+                                        <small>Executive Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
+                                        <h5 class="mb-0">Kate Winslet</h5>
+                                        <small>Co Founder</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
+                                        <h5 class="mb-0">Cody Gardner</h5>
+                                        <small>Project Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+    <section class="glowFrame_blogSlider">
+         <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Blog Section</div>
+                <h1 class="mb-4">Stories That Matter</h1>
+            </div>
+ 
+  <div class="glowFrame_sliderContainer">
+    <button class="glowFrame_slideBtn glowFrame_prevBtn">&#10094;</button>
+    <div class="glowFrame_sliderWrapper">
+      <div class="glowFrame_slider">
+        <!-- Blog Card 1 -->
+        <div class="glowFrame_blogCard">
+          <img src="./img/WhatsApp Image 2025-06-20 at 07.38.24_88e71982.jpg" alt="Olowu Visit" class="glowFrame_blogImage">
+          <div class="glowFrame_blogContent">
+            <h3>The Olowu of Owu Visits Daniel School</h3>
+            <p>A royal promise was made — to transform inclusive education from the roots.</p>
+            <a href="#" class="glowFrame_blogBtn">Read Full Blog</a>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="glowFrame_blogCard">
+          <img src="./img/project-3.png" alt="Mama Keji" class="glowFrame_blogImage">
+          <div class="glowFrame_blogContent">
+            <h3>From Hustle to Hope: Mama Keji's Story</h3>
+            <p>With a ₦75k loan, she built a thriving catering business. Her kids are back in school.</p>
+            <a href="#" class="glowFrame_blogBtn">Read Full Blog</a>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="glowFrame_blogCard">
+          <img src="./img/project-2.png" alt="Health Centre" class="glowFrame_blogImage">
+          <div class="glowFrame_blogContent">
+            <h3>Hope Restored: Igosun Health Centre</h3>
+            <p>Once forgotten, now a beacon of care. See the transformation in photos.</p>
+            <a href="#" class="glowFrame_blogBtn">Read Full Blog</a>
+          </div>
+        </div>
+        <!-- Blog Card 4 -->
+        <div class="glowFrame_blogCard">
+          <img src="./img/scholars.jpg" alt="Scholar Spotlight" class="glowFrame_blogImage">
+          <div class="glowFrame_blogContent">
+            <h3>Scholar Spotlight: Beyond the Score</h3>
+            <p>Meet the students scoring above 250 in JAMB — backed by community hope.</p>
+            <a href="#" class="glowFrame_blogBtn">Read Full Blog</a>
+          </div>
+        </div>
+        <!-- Blog Card 5 -->
+        <div class="glowFrame_blogCard">
+          <img src="./img/_OWU5837.jpg" alt="Dispute Resolution" class="glowFrame_blogImage">
+          <div class="glowFrame_blogContent">
+            <h3>Peace by Dialogue: ADR in Action</h3>
+            <p>26 long-standing disputes, resolved peacefully through community wisdom and structure.</p>
+            <a href="#" class="glowFrame_blogBtn">Read Full Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="glowFrame_slideBtn glowFrame_nextBtn">&#10095;</button>
+  </div>
+</section>
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Testimonial</div>
+                    <h1 class="mb-4">What They’re Saying</h1>
+                    <p class="mb-4">The Olowu Hope Initiative isn’t just a program — it’s a movement touching lives where it matters most. From women launching businesses, to children staying in school, to families reunited through peacebuilding, these are the voices of transformation.<br>
+                        They are not statistics.<br>
+                        They are the proof that when compassion meets action, change is inevitable.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel border-start border-primary">
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">Before the loan, I was managing to sell pap and akara under a shed. With ₦75,000 from the Olowu Hope Initiative, I started a catering business. I now cook for events and even supply food to a local school. My daughter is back in school. My life changed — and it started with hope</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/test.svg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Mama Keji</h5>
+                                    <span>Trader</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">I used to come to school late because there was no food at home. Now I’m always early because I know I’ll eat at school. I don’t feel sleepy in class again. I want to become a teacher one day</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/test.svg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Tofunmi</h5>
+                                    <span> Primary 4 Pupil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item ps-5">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="fs-4">I couldn’t afford hospital bills for my son’s eye problems. When the free medical check-up came to our school, they tested his eyes and helped us get treatment at FMC. I cried that day. I felt seen and supported</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded-circle" src="img/test.svg"
+                                    style="width: 60px; height: 60px;">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Mrs. Alabi</h5>
+                                    <span>Fashion Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid bg-primary newsletter py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="Enter Your Email" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">Be the first to receive latest news from us</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                       <img src="./img/Olowu Hope Initiative.svg" style="width: 200px;">
+                    </a>
+                    <p class="mb-0">The Olowu Hope Initiative is a community development movement rooted in royal leadership and civic compassion.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Abeokuta</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@olowuhopeinitiative.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Career</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Initiative</h5>
+                    <a class="btn btn-link" href="">Meal-a-day Program</a>
+                    <a class="btn btn-link" href="">Women Empowerment through Microcredit</a>
+                    <a class="btn btn-link" href="">Skills & Enterprise Training</a>
+                    <a class="btn btn-link" href="">Healthcare & Insurance</a>
+                    <a class="btn btn-link" href="">Conflict Resolution</a>
+                    <a class="btn btn-link" href="">Inclusive Education</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Olowu Hope Initiative</a>, All Right Reserved.
+
+                        
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+  const glowFrameSlider = document.querySelector('.glowFrame_slider');
+  const prevBtn = document.querySelector('.glowFrame_prevBtn');
+  const nextBtn = document.querySelector('.glowFrame_nextBtn');
+
+  let glowFrameIndex = 0;
+  const glowFrameCards = document.querySelectorAll('.glowFrame_blogCard');
+  const glowFrameVisibleCards = 3;
+  const glowFrameTotal = glowFrameCards.length;
+
+  function updateGlowFrameSlider() {
+    const shift = (100 / glowFrameVisibleCards) * glowFrameIndex;
+    glowFrameSlider.style.transform = `translateX(-${shift}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    glowFrameIndex = (glowFrameIndex - 1 + glowFrameTotal) % glowFrameTotal;
+    updateGlowFrameSlider();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    glowFrameIndex = (glowFrameIndex + 1) % glowFrameTotal;
+    updateGlowFrameSlider();
+  });
+</script>
+
+</body>
+
+</html>
