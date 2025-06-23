@@ -48,7 +48,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <img src="./img/6.svg" style="width: 300px; padding-top: 40px;">
+                    <img src="./img/Olowu Hope Initiative.svg" class="logo">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -57,11 +57,13 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="abouts.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Initiatives</a>
+                        <a href="projects.html" class="nav-item nav-link">Projects</a>
+                        <a href="contacts.html" class="nav-item nav-link">Blogs</a>
+                        <a href="contacts.html" class="nav-item nav-link">Contact</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <!--<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light mt-2">
                                 <a href="feature.html" class="dropdown-item">Features</a>
                                 <a href="team.html" class="dropdown-item">Our Team</a>
@@ -69,8 +71,8 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                 <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>-->
+                        
                     </div>
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
@@ -93,7 +95,7 @@
                     <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/hero-img.png" alt="">
+                    <img class="img-fluid" src="img/woman-with-baby-her-back_886588-12062.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -120,6 +122,7 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
+     <div class="pattern-background"></div>
 
 
     <!-- About Start -->
@@ -128,7 +131,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="img/_OWU5860.jpg">
+                        <img  style="background-color: transparent;" class="img-fluid" src="img/_OWU5860.jpg">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -149,7 +152,7 @@
 
 
 <!-- Service Start -->
-<div class="container-fluid bg-light mt-5 py-5">
+<div class="container-fluid  mt-5 py-5">
     <div class="container py-5 text-center">
         <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
         <h1 class="mb-4">Our Core Initiatives</h1>
@@ -203,7 +206,7 @@
         </div>
 
         <!-- Fifth container centered -->
-        <div class="d-flex justify-content-center mt-5 gap-4">
+        <div class="d-flex flex-wrap justify-content-center mt-5 gap-4">
             <div class="service-item bus5 text-center rounded">
                 <div class="service-icon btn-square">
                     <img class="ics" src="./img//conflicticon.svg">
@@ -258,7 +261,7 @@
                                 <i class="fa fa-users fa-3x text-white"></i>
                                 <div class="ms-3">
                                     <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                    <p class="text-white mb-0">Happy Clients</p>
+                                    <p class="text-white mb-0">Happy Citizens</p>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +286,7 @@
 
 
     <!-- Case Start -->
-    <div class="container-fluid bg-light py-5">
+    <div class="container-fluid  py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Projects</div>
@@ -784,30 +787,26 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-  const glowFrameSlider = document.querySelector('.glowFrame_slider');
+  const sliderWrapper = document.querySelector('.glowFrame_sliderWrapper');
+  const card = document.querySelector('.glowFrame_blogCard');
   const prevBtn = document.querySelector('.glowFrame_prevBtn');
   const nextBtn = document.querySelector('.glowFrame_nextBtn');
 
-  let glowFrameIndex = 0;
-  const glowFrameCards = document.querySelectorAll('.glowFrame_blogCard');
-  const glowFrameVisibleCards = 3;
-  const glowFrameTotal = glowFrameCards.length;
-
-  function updateGlowFrameSlider() {
-    const shift = (100 / glowFrameVisibleCards) * glowFrameIndex;
-    glowFrameSlider.style.transform = `translateX(-${shift}%)`;
-  }
+  nextBtn.addEventListener('click', () => {
+    sliderWrapper.scrollBy({
+      left: card.offsetWidth + 24, // +gap
+      behavior: 'smooth',
+    });
+  });
 
   prevBtn.addEventListener('click', () => {
-    glowFrameIndex = (glowFrameIndex - 1 + glowFrameTotal) % glowFrameTotal;
-    updateGlowFrameSlider();
-  });
-
-  nextBtn.addEventListener('click', () => {
-    glowFrameIndex = (glowFrameIndex + 1) % glowFrameTotal;
-    updateGlowFrameSlider();
+    sliderWrapper.scrollBy({
+      left: -(card.offsetWidth + 24),
+      behavior: 'smooth',
+    });
   });
 </script>
+
 
 </body>
 
