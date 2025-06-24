@@ -116,6 +116,9 @@ h6,
     width: 180px;
 }
 
+   
+
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         padding: 0 15px;
@@ -509,9 +512,11 @@ h6,
 .footer {
     background: url(../img/footer.png) center center no-repeat;
     background-size: cover;
-    width: 100vx;
+    
 }
-
+.service-item p, h5{
+    color: black;
+}
 
 .footer .btn.btn-social {
     margin-right: 5px;
