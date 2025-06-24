@@ -508,8 +508,10 @@ h6,
 /*** Footer ***/
 .footer {
     background: url(../img/footer.png) center center no-repeat;
-    background-size: contain;
+    background-size: cover;
+    width: 100vx;
 }
+
 
 .footer .btn.btn-social {
     margin-right: 5px;
@@ -738,4 +740,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Gotham Light', sans-serif;
+}
+body{
+    overflow-x: hidden;
 }
