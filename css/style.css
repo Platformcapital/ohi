@@ -838,13 +838,13 @@ body{
   border: 3px solid #6a0dad;
   color: #f4c430;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
-  font-size: 28px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
