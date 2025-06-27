@@ -855,6 +855,8 @@ body{
   .timeline-item {
     flex-direction: column;
     align-items: flex-start !important;
+    overflow-x: hidden;
+    width: 95%;
   }
 
   .timeline-icon {
@@ -889,10 +891,10 @@ body{
 .impact-card {
   flex: 1 1 250px;
   max-width: 350px;
-  background: #f4f7fa;
+ 
   border-radius: 10px;
   padding: 25px 20px;
-  box-shadow:  2px 2px #6a0dad;
+  box-shadow:  5px 10px 25px #0a00197c;
   text-align: left;
   opacity: 0;
   transform: translateY(40px);
@@ -933,4 +935,7 @@ body{
     flex-direction: column;
     align-items: center;
   }
-}
+  body{
+    overflow-x: hidden;
+  }
+  
