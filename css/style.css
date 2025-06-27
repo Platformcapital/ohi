@@ -771,11 +771,11 @@ body{
 .timeline::before {
   content: '';
   position: absolute;
-  top: 10;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: 100%;
+  height: 82%;
   background: #6a0dad;
   z-index: 999;
 }
