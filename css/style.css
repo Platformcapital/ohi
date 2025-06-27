@@ -856,7 +856,8 @@ body{
     flex-direction: column;
     align-items: flex-start !important;
     overflow-x: hidden;
-    width: 95%;
+    width: 100%;
+    padding-right: 30px;
   }
 
   .timeline-icon {
