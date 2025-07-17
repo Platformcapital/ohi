@@ -123,9 +123,17 @@ body {
 
 @media (max-width: 768px) {
   .gallery-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
   }
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  top: 30%;
+}
 
   .gallery-hero h1 {
     font-size: 2.4rem;

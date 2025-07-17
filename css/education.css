@@ -269,7 +269,7 @@
     @media (max-width: 768px) {
       .hero {
         background-image: url('/img/_OWU5860.jpg');
-        height: auto;
+        height: 90vh;
         padding: 80px 20px;
       }
 
