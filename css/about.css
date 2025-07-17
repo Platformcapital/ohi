@@ -1,0 +1,155 @@
+/* About Sections */
+.about-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 40px;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-text p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Pillars */
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pillar {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  flex: 1 1 280px;
+  transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-5px);
+}
+
+.pillar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+.pillar p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Impact Section */
+.impact-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.impact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e1e1e;
+}
+
+.impact-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.impact-section ul li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #444;
+  position: relative;
+  padding-left: 25px;
+}
+
+.impact-section ul li::before {
+  content: \"✅\";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-size: 1.1rem;
+}
+
+/* Call to Action */
+.cta-section {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ccc;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fcd53f;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pillar {
+    flex: 1 1 100%;
+  }
+
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-section h2,
+  .impact-section h2,
+  .cta-section h2 {
+    font-size: 1.6rem;
+  }
+}

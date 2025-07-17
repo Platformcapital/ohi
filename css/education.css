@@ -357,3 +357,24 @@
   .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
   }
+  .button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  background-color: #6a0dad;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f0c000;
+  color: #000;
+}
