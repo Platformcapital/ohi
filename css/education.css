@@ -90,6 +90,7 @@
 .tagline h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 50px;
   
 }
 
@@ -147,7 +148,7 @@
   }
 
   .section-title {
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 60px;
     color: #222;
