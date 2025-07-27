@@ -45,7 +45,7 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid sticky-top">
+    <div class="container-fluid  navbar-expand-lg fixed-navbar">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
@@ -86,23 +86,26 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
-        <div class="container pt-5">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Rooted Leadership</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Restoring Dignity,<span style="color: #f4c430;"> Inspiring Hope</span></h1>
-                    <p class="text-white mb-4 animated slideInRight">A Royal commitment to Community Empowerment</p>
-                    <a href="#ups" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
-                    <a href="mailto:info@olowuhope.com" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/wom.webp" alt="">
-                </div>
-            </div>
-        </div>
+<div class="video-hero-section" id="hero">
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="./img/bgvid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay"></div>
+  <div class="video-hero-content container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 text-center text-lg-start">
+        <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Rooted Leadership</div>
+        <h1 class="display-4 text-white mb-4">Restoring Dignity, <span style="color: #f4c430;">Inspiring Hope</span></h1>
+        <p class="text-white mb-4">A Royal commitment to Community Empowerment</p>
+        <a href="#ups" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3">Read More</a>
+        <a href="mailto:info@olowuhope.com" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill">Contact Us</a>
+      </div>
     </div>
-    <!-- Hero End -->
+  </div>
+</div>
+<!-- Hero End -->
+
     <div class="container py-5 text-center" id="about">
          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Vision</div>
         <h1 class="mb-4">Raising Hope. <span style="color: #6a0dad;">Inspiring Change.</span></h1>
@@ -751,7 +754,33 @@
             </div>
             <button class="glowFrame_slideBtn glowFrame_nextBtn">&#10095;</button>
         </div>
-    </section>
+    </section>-->
+    <section class="custom-video-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>The Olowu Hope Initiative</h2>
+      <p>The Olowu Hope Pillars are focused on building a new foundation for our people</p>
+    </div>
+    <div class="video-wrapper">
+      <div class="video-container">
+        <iframe 
+          src="https://player.vimeo.com/video/1104958126?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Atlantic Refinery Jetty Video"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -1001,6 +1030,21 @@
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="_X06_8XgopNXzomkdB7yT";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".fixed-navbar");
+    const hero = document.getElementById("hero");
+    const heroHeight = hero.offsetHeight;
+
+    if (window.scrollY >= heroHeight - 80) {
+      navbar.style.backgroundColor = "#000"; // solid black
+    } else {
+      navbar.style.backgroundColor = "transparent"; // transparent over hero
+    }
+  });
+</script>
+
 
 
 </body>
