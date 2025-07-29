@@ -87,8 +87,14 @@
 
     <!-- Hero Start -->
 <div class="video-hero-section" id="hero">
-  <video id="bg-video" autoplay muted playsinline loop class="video-background">
+  <video id="mobile-video" autoplay muted playsinline loop class="video-background show-on-mobile">
   <source src="./img/bgvid (1).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Desktop Video -->
+<video id="desktop-video" autoplay muted playsinline loop class="video-background show-on-desktop">
+  <source src="./img/por.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
   <div class="video-overlay"></div>
@@ -1049,17 +1055,32 @@
   const video = document.getElementById('bg-video');
   let firstLoopEnded = false;
 
-  // Wait for video to load and unmute it for first loop
+  // Autoplay on load (muted initially)
   video.addEventListener('canplaythrough', () => {
-    video.muted = false; // Enable audio for first loop
-    video.play();
+    try {
+      video.muted = false; // Try to unmute for first loop
+      video.play().catch(() => {
+        // fallback for mobile
+        video.muted = true;
+        video.play();
+      });
+    } catch (err) {
+      console.error("Playback failed:", err);
+    }
   });
 
-  // Check during playback if the video is about to end
+  // Fallback: Play video on first user interaction if autoplay fails
+  document.addEventListener('touchstart', () => {
+    if (video.paused) {
+      video.play().catch(() => {});
+    }
+  }, { once: true });
+
+  // Mute after first loop
   video.addEventListener('timeupdate', () => {
     if (!firstLoopEnded && video.currentTime > video.duration - 0.5) {
       firstLoopEnded = true;
-      video.muted = true; // Mute before the second loop
+      video.muted = true;
     }
   });
 </script>

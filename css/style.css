@@ -1138,3 +1138,18 @@ body{
     font-size: 0.95rem;
   }
 }
+.show-on-mobile {
+  display: none;
+}
+.show-on-desktop {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .show-on-mobile {
+    display: block;
+  }
+  .show-on-desktop {
+    display: none;
+  }
+}
