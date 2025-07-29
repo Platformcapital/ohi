@@ -4,6 +4,9 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+#hero{
+  height: 100vh;
+}
 
 .about-section h2 {
   font-size: 2rem;

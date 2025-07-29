@@ -146,6 +146,10 @@
     font-family: 'Helvetica Neue', sans-serif;
  
   }
+  #hero{
+  height: 100vh;
+}
+
 
   .section-title {
     text-align: center;

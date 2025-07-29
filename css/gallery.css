@@ -134,6 +134,10 @@ body {
   border-radius: 8px;
   top: 30%;
 }
+#hero{
+  height: 100vh;
+}
+
 
   .gallery-hero h1 {
     font-size: 2.4rem;

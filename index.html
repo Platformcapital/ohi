@@ -87,10 +87,10 @@
 
     <!-- Hero Start -->
 <div class="video-hero-section" id="hero">
-  <video autoplay muted loop playsinline class="video-background">
-    <source src="./img/bgvid.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <video id="bg-video" autoplay muted playsinline loop class="video-background">
+  <source src="./img/bgvid (1).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <div class="video-overlay"></div>
   <div class="video-hero-content container">
     <div class="row align-items-center">
@@ -197,7 +197,7 @@
                 <p><ul>
                     <li>Meal-A-Day -Provison of mid day meals to primary school pupils</li>
                     <li>Scholarship for Secondary School students</li>
-                    <LI>⁠Teachers Training Programs for Primary school teachers</LI>
+                    <LI>⁠Teachers Training Programs for Primary and secondary school teachers</LI>
                     <LI>Classroom Activities/Play Therapy programs for primary school learners</LI>
                 </ul></p>
                 <a class="btn px-3 mt-auto mx-auto" href="education.html">Read More</a>
@@ -211,7 +211,8 @@
                 </div>
                 <h5 class="mb-3">Healthcare Services</h5>
                 <ul>
-                    <li>Rehabilitation of Health Centres</li>
+                    <li>Healthcare Screening & Outreach</li>
+                    <li>Construction and rehabilitation of health centres</li>
                     <li>Provision of dental care to the community</li>
                     <li>⁠Provision of quarterly healthcare screening</li>
                     <li>BP Checks, Blood sugar checks, cancer screening, HIV/AIDS Screening, Sickle Cell Anemia Screening</li>
@@ -235,7 +236,7 @@
                     <img class="ics" src="./img//healthicon.svg">
                 </div>
                 <h5 class="mb-3">Skills Acquisition Program</h5>
-                <p>Training programs in Cake baking, Make -Up Artist Training, soap making, bead making, Auto- Gele(Head Gear) making, candle making, petroleum jelly making, business proposal writing, Script writing, Art Business Development, Fish farming, Bee Keeping.</p>
+                <p>Training programs in Cake baking, CNC Machine Training, Make -Up Artist Training, soap making, bead making, Auto- Gele(Head Gear) making, Carpentry Training, Furniture making, candle making, petroleum jelly making, business proposal writing, Script writing, Art Business Development, Fish farming, Bee Keeping. e.t.c <Fieldset></Fieldset> </p>
                 <a class="btn px-3 mt-auto mx-auto" href="skill.html">Read More</a>
             </div>
         </div>
@@ -1041,6 +1042,24 @@
       navbar.style.backgroundColor = "#000"; // solid black
     } else {
       navbar.style.backgroundColor = "transparent"; // transparent over hero
+    }
+  });
+</script>
+<script>
+  const video = document.getElementById('bg-video');
+  let firstLoopEnded = false;
+
+  // Wait for video to load and unmute it for first loop
+  video.addEventListener('canplaythrough', () => {
+    video.muted = false; // Enable audio for first loop
+    video.play();
+  });
+
+  // Check during playback if the video is about to end
+  video.addEventListener('timeupdate', () => {
+    if (!firstLoopEnded && video.currentTime > video.duration - 0.5) {
+      firstLoopEnded = true;
+      video.muted = true; // Mute before the second loop
     }
   });
 </script>
