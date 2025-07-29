@@ -1006,32 +1006,22 @@ body{
   display: block;
 }
 /* Video background styling */
-.video-hero-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+/* Default: show desktop video, hide mobile */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
 }
 
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* Overlay to darken the video */
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+/* On mobile: show mobile video, hide desktop */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
 }
 
 /* Hero content on top */
@@ -1153,3 +1143,89 @@ body{
     display: none;
   }
 }
+.unmute-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.8);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Hide on desktop */
+@media screen and (min-width: 769px) {
+  .unmute-btn {
+    display: none;
+  }
+}
+.video-hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Show only one video depending on device */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.video-hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Tap to unmute button */
+.unmute-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  z-index: 4;
+  cursor: pointer;
+}
+
