@@ -63,3 +63,30 @@
     
 })(jQuery);
 
+$(document).ready(function(){
+  $("#contactForm").on("submit", function(e){
+    e.preventDefault();
+    
+    var formData = $(this).serialize();
+
+    $.ajax({
+      url: "https://formsubmit.co/ajax/support@olowuhopeinitiative.com",
+      method: "POST",
+      data: formData,
+      dataType: "json",
+      success: function(data) {
+        $("#responseMsg")
+          .removeClass("error")
+          .addClass("success")
+          .text("✅ Thank you! Your message has been sent.");
+        $("#contactForm")[0].reset();
+      },
+      error: function(err) {
+        $("#responseMsg")
+          .removeClass("success")
+          .addClass("error")
+          .text("❌ Oops! Something went wrong. Please try again.");
+      }
+    });
+  });
+});
