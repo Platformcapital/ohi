@@ -1272,7 +1272,7 @@ transition: border-color .3s;
 input:focus, select:focus, textarea:focus {
 border-color: #f4c430;
 }
-button {
+.buttons {
 width: 100%;
 padding: 0.9rem;
 background: #f4c430;
