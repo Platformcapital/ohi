@@ -9,7 +9,7 @@ const prevImageBtn = document.getElementById("prev-image");
 const nextImageBtn = document.getElementById("next-image");
 
 const IMAGES_PER_PAGE = 21;
-const TOTAL_IMAGES = 355;
+const TOTAL_IMAGES = 366;
 const TOTAL_PAGES = Math.ceil(TOTAL_IMAGES / IMAGES_PER_PAGE);
 let currentPage = 1;
 let currentImageIndex = 0;
